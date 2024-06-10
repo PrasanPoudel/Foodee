@@ -25,7 +25,7 @@ const FoodCard = ({ id, name, price, desc, img, rating, handleToast }) => {
         <LuShoppingBag
           onClick={() => {
             dispatch(
-              addToCart({ id, name, price, rating, price, img, qty: 1 })
+              addToCart({ id, name, price, rating, img, qty: 1 })
             );
             handleToast(name);
           }}
