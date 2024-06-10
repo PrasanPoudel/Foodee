@@ -9,12 +9,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route
           path="/success"
-          element={<ProtectedRoute element={<Success />} />}
+          element={<ProtectedRoute element={<Success/>} />}
         />
-        <Route path="/*" element={<Error />} />
+        {/* <Route path="/*" element={<Error/>} /> */}
       </Routes>
     </BrowserRouter>
   );
