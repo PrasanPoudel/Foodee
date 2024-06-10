@@ -14,7 +14,7 @@ const App = () => {
           path="/success"
           element={<ProtectedRoute element={<Success/>} />}
         />
-        {/* <Route path="/*" element={<Error/>} /> */}
+        <Route path="/*" element={<Home/>} />
       </Routes>
     </BrowserRouter>
   );
