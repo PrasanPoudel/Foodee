@@ -22,7 +22,7 @@ const CategoryMenu = () => {
   const selectedCategory = useSelector((state) => state.category.category);
 
   return (
-    <div className="ml-6">
+    <div className="ml-6 mt-6" id="foodMenu">
       <h3 className="text-xl font-semibold">
        Try some delicious Foods:
       </h3>
