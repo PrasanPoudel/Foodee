@@ -1,9 +1,9 @@
 .title{
-    font-size: 55px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 75px;
 }
 
 .title span{
@@ -85,13 +85,20 @@
     }
     
     .review .review_box .review_card .review_text .review_social i{
-        margin: 5px 1px;
+        margin: 5px 5px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid #000;
         font-size: 15px;
         opacity: 0;
         cursor: pointer;
         transition: 0.3s;
     }
-    
+    .review .review_box .review_card .review_text .review_social i:hover{
+        background-color: rgb(234 88 12);
+        color: #fff;
+
+    }
     .review .review_box .review_card:hover .review_text .review_social i{
         opacity: 1;
         transform: translateY(-8px);
@@ -167,7 +174,6 @@
         text-align: center;
         margin-top: 20px;
         text-decoration: none;
-        border-radius: 25px;
         font-weight: 600;
         font-size: 25px;
     }
@@ -198,12 +204,12 @@
         justify-content: center;
         position: relative;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        transition: 0.4s;
+        transition: 0.5s;
     }
     
     .team .team_box .profile:hover{
-        border-radius: 20px;
-        height: 320px;
+        border-radius: 25px;
+        height: 375px;
     }
     
     .team .team_box .profile img{
@@ -219,7 +225,7 @@
     }
     
     .team .team_box .profile:hover img{
-        border-radius: 20px;
+        border-radius: 25px;
         margin-top: -230px;
     }
     
@@ -247,18 +253,23 @@
     }
     
     .team .team_box .profile .info .team_icon i{
-        margin: 10px 5px 5px 0;
+        margin: 10px 5px 5px 5px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid #000;
         cursor: pointer;
-        transition: 0.3s;
+        transition: 0.5s;
     }
     
     .team .team_box .profile .info .team_icon i:hover{
-        color:  rgb(234 88 12);
+        background-color:  rgb(234 88 12);
+        color: #fff;
     }
     
     
     ::-webkit-scrollbar{
-        width: 13px;
+        width: 10px;
+        height: 12px;
     }
     
     ::-webkit-scrollbar-track{
@@ -293,10 +304,10 @@
         }
         .team .team_box{
             grid-template-columns: 1fr;
-            gap: 100px;
+            gap: 75px;
         }
         .title{
-            font-size: 30px;
+            font-size: 35px;
             flex-wrap: wrap;
         }
         

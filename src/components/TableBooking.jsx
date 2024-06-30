@@ -2,7 +2,7 @@ import React from 'react'
 
 const TableBooking = () => {
   return (
-    <div className="order" id="Order">
+    <div className="order" id="TableBooking">
       <h1 className="title">Table<span>Booking</span></h1>
 
       <div className="order_main">
@@ -32,7 +32,7 @@ const TableBooking = () => {
                   <input type="number" min="1" max="5" placeholder="" />
               </div>
 
-              <a href="#" className="order_btn">Request</a>
+              <a href="#" className="order_btn rounded-lg">Request</a>
 
           </form>
 

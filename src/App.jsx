@@ -4,17 +4,21 @@ import Home from "./pages/Home";
 import Success from "./pages/Success";
 import Error from "./pages/Error";
 import ProtectedRoute from "./components/ProtectedRoute";
-
+import Menu from "./pages/Menu"
+import SingleFoodItem from "./components/SingleFoodItem";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/Menu" element={<Menu/>} />
+        <Route exact path="/SingleFoodItem/:name" element={<SingleFoodItem/>} />
         <Route
+        exact
           path="/success"
           element={<ProtectedRoute element={<Success/>} />}
         />
-        <Route path="/*" element={<Error/>} />
+        <Route exact path="/*" element={<Error/>} />
       </Routes>
     </BrowserRouter>
   );
