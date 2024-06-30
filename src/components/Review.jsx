@@ -10,7 +10,7 @@ const Review = () => {
           <div className="review_card">
 
               <div className="review_profile">
-                  <img src="image/review_1.png"/>
+                  <img src="/image/review_1.png"/>
               </div>
 
               <div className="review_text">
@@ -42,7 +42,7 @@ const Review = () => {
           <div className="review_card">
 
               <div className="review_profile">
-                  <img src="image/review_2.png"/>
+                  <img src="/image/review_2.png"/>
               </div>
 
               <div className="review_text">
@@ -74,7 +74,7 @@ const Review = () => {
           <div className="review_card">
 
               <div className="review_profile">
-                  <img src="image/review_3.png"/>
+                  <img src="/image/review_3.png"/>
               </div>
 
               <div className="review_text">
@@ -106,7 +106,7 @@ const Review = () => {
           <div className="review_card">
 
               <div className="review_profile">
-                  <img src="image/review_4.png"/>
+                  <img src="/image/review_4.png"/>
               </div>
               <div className="review_text">
                   <h2 className="name">John Deo</h2>
