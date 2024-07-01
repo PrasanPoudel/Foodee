@@ -41,25 +41,25 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={`flex z-50 items-center justify-between lg:flex-row  w-full pt-5 px-3 overflow-hidden ${isFixed ? 'fixed top-0 left-0 w-full  bg-[#F0F0F0]' : ''}`}>
+    <nav className={`flex z-50 items-center justify-between lg:flex-row  w-full px-3 overflow-hidden ${isFixed ? 'fixed top-0 left-0  bg-[#F0F0F0]' : ''}`}>
       <div>
         <div className={`flex overflow-hidden items-center`}>
-        <img src={logo} alt="" className="h-[100px] w-[150px] bg-transparent"/>
+        <img src={logo} alt="" className="h-[75px] w-[125px] bg-transparent lg:h-[100px] lg:w-[150px]" />
         </div>
       </div>
             <div>
           <ul className="hidden lg:flex  gap-10 text-2xl items-center flex-nowrap">
             <li>
-              <Link to="/" onClick={scrollToTop}  className="hover:border-orange-600 hover:border-b-4 font-bold">Home</Link>
+              <Link to="/" onClick={scrollToTop} className={` font-bold hover:border-orange-600 hover:border-b-4`}>Home</Link>
             </li>
             <li>
-              <Link to="/Menu" onClick={scrollToTop} className="hover:border-orange-600 hover:border-b-4 font-bold">Menu</Link>
+              <Link to="/Menu" onClick={scrollToTop} className="NavLink hover:border-orange-600 hover:border-b-4 font-bold">Menu</Link>
             </li>
             <li>
-              <a href="#Gallary"  className="hover:border-orange-600 hover:border-b-4 font-bold">Gallary</a>
+              <a href="#Gallary"  className="NavLink hover:border-orange-600 hover:border-b-4 font-bold">Gallary</a>
             </li>
             <li>
-              <a href="#Team" className="hover:border-orange-600 hover:border-b-4 font-bold">Team</a>
+              <a href="#Team" className="NavLink hover:border-orange-600 hover:border-b-4 font-bold">Team</a>
             </li>
           </ul>
         </div>

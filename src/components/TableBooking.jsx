@@ -8,7 +8,7 @@ const TableBooking = () => {
       <div className="order_main">
 
           <div className="order_image">
-              <img src="/image/order_image.png"/>
+              <img src="/image/order_image.webp"/>
           </div>
 
           <form action="#">

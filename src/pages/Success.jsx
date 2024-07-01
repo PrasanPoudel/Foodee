@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PropagateLoader } from "react-spinners";
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer"
 const Success = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -22,6 +22,7 @@ const Success = () => {
         </div>
       )}
     </div>
+    <Footer />
       </>
   );
 };

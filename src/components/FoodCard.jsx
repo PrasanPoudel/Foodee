@@ -14,8 +14,8 @@ const FoodCard = ({ id, name, price, img, rating, handleToast }) => {
         alt=""
         className="w-auto h-[150px] hover:scale-110 bg-transparent rounded-3xl cursor-grab transition-all duration-500 ease-in-out"
       />
-      <div className="text-sm flex justify-between">
-        <h2 className="h-[50px]">{name}</h2>
+      <div className="text-sm flex justify-between gap-6">
+        <h2 className="h-[50px] flex flex-wrap">{name}</h2>
         <span className="text-green-500 ">रु.{price}</span>
       </div>
       {/* <p className="text-sm font-normal text-justify h-[100px]">{desc.slice(0, 75)}...</p> */}

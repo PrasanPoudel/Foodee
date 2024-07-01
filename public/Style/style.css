@@ -9,17 +9,7 @@
 .title span{
     color:  rgb(234 88 12);
     margin-left: 15px;
-    font-family: mv boli;
-    text-decoration: underline;
 }
-    
-    /*Gallary*/
-    
-    .gallary{
-        width: 100%;
-        padding: 70px 0;
-    }
-    
     
     /*Review*/
     
@@ -108,8 +98,10 @@
         text-align: center;
         line-height: 22px;
         transition: 0.3s;
-        font-size: 15px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         text-align: justify;
+        color: #4b5563;
     }
     
     .review .review_box .review_card:hover .review_text p{
@@ -250,6 +242,9 @@
         width: 70%;
         text-align: center;
         margin: 0 auto 10px auto;
+        color: #4b5563;
+        font-size: 1rem;
+        line-height: 1rem;
     }
     
     .team .team_box .profile .info .team_icon i{
