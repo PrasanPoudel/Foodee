@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 const FoodItems = () => {
   const category = useSelector((state) => state.category.category);
   const search = useSelector((state) => state.search.search);
-  const handleToast = (name) => toast.success(`${name} added to bag.`);
+  const handleToast = (name) => toast.success(`Food item '${name}' is added to basket 🧺.`);
 
   // Filtered food items based on category and search criteria
   const availableFoods = FoodData.filter((food) => {

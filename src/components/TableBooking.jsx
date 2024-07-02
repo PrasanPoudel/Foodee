@@ -32,7 +32,7 @@ const TableBooking = () => {
                   <input type="number" min="1" max="5" placeholder="" />
               </div>
 
-              <a href="#" className="order_btn rounded-lg">Request</a>
+              <a href="#" className="order_btn rounded-lg border-2 hover:border-black">Request</a>
 
           </form>
 

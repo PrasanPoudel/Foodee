@@ -1,6 +1,5 @@
 import React from "react";
 import { IoMdClose } from "react-icons/io";
-import logo from "../assets/logo.png";
 import emptyCart from "../assets/emptyCart.png";
 import { useState, useEffect } from "react";
 import { LuShoppingBasket } from "react-icons/lu";
@@ -9,6 +8,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import ItemCard from "./ItemCard";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineFoodBank } from "react-icons/md";
 const Navbar = () => {
   const location = useLocation();
   const isActive = (location, paths, hashes) => {
@@ -45,33 +45,33 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={`flex z-50 items-center justify-between lg:flex-row  w-full px-3 overflow-hidden ${isFixed ? 'fixed top-0 left-0  bg-[#F0F0F0]' : ''}`}>
+    <nav className={`flex z-50 shadow items-center justify-between lg:flex-row  w-full px-2 overflow-hidden ${isFixed ? 'fixed top-0 left-0  bg-[#F0F0F0]' : ''}`}>
       <div>
-        <div className={`flex overflow-hidden items-center`}>
-        <img src={logo} alt="" className="h-[75px] w-[125px] bg-transparent lg:h-[100px] lg:w-[150px]" />
+        <div className={`overflow-hidden items-center`}>
+        <h1 className="flex text-5xl text-orange-600 font-bold"><MdOutlineFoodBank />Foodee</h1>
         </div>
       </div>
             <div>
-          <ul className="hidden lg:flex  gap-10 text-2xl items-center flex-nowrap border-4 border-orange-600 p-2 rounded-lg">
+          <ul className="hidden lg:flex  gap-10 text-2xl items-center flex-nowrap">
             <li>
               <Link to="/" onClick={scrollToTop} className={`${isActive(location, ['/'], ['']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Home</Link>
             </li>
-            <li>
+            <li className="border-l-2 border-black pl-2">
               <Link to="/Menu" onClick={scrollToTop} className={`${isActive(location, ['/Menu'], ['']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-4 font-bold`}>Menu</Link>
             </li>
-            <li>
-              <a href="#Gallary" 
+            <li className="border-l-2 border-black pl-2">
+              <a href="#Gallery" 
               onClick={()=>
                 console.log(location.pathname)
               }
-              className={`${isActive(location, ['/', '/Menu'], ['#Gallary']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-4 font-bold`}>Gallary</a>
+              className={`${isActive(location, ['/', '/Menu'], ['#Gallery']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-4 font-bold`}>Gallery</a>
             </li>
-            <li>
+            <li className="border-l-2 border-black pl-2">
               <a href="#Team" className={`${isActive(location, ['/', '/Menu'], ['#Team']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-4 font-bold`}>Team</a>
             </li>
           </ul>
         </div>
-        <div  className='flex h-[65px] w-[120px] mr-[-40px] items-center'>
+        <div  className='flex h-[65px] w-[120px] mr-[-75px] lg:mr-[-50px] items-center'>
       <LuShoppingBasket
         onClick={() => setIsVisibleCart(!isVisibleCart)}
         className={`bg-transparent text-5xl`}
@@ -100,7 +100,7 @@ const Navbar = () => {
               <Link to="/Menu" onClick={scrollToTop} className={`${isActive(location, ['/Menu'], ['']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Menu</Link>
             </li>
             <li>
-              <a href="#Gallary" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className={`${isActive(location, ['/', '/Menu'], ['#Gallary']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Gallary</a>
+              <a href="#Gallery" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className={`${isActive(location, ['/', '/Menu'], ['#Gallery']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Gallery</a>
             </li>
             <li>
               <a href="#Team" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className={`${isActive(location, ['/', '/Menu'], ['#Team']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Team</a>

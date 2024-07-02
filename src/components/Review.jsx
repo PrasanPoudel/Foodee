@@ -14,7 +14,7 @@ const Review = () => {
               </div>
 
               <div className="review_text">
-                  <h2 className="name">John Deo</h2>
+                  <h2 className="name">Reviewer 1</h2>
 
                   <div className="review_icon">
                       <i className="fa-solid fa-star"></i>
@@ -46,7 +46,7 @@ const Review = () => {
               </div>
 
               <div className="review_text">
-                  <h2 className="name">John Deo</h2>
+                  <h2 className="name">Reviewer 2</h2>
 
                   <div className="review_icon">
                       <i className="fa-solid fa-star"></i>
@@ -78,7 +78,7 @@ const Review = () => {
               </div>
 
               <div className="review_text">
-                  <h2 className="name">John Deo</h2>
+                  <h2 className="name">Reviewer 3</h2>
 
                   <div className="review_icon">
                       <i className="fa-solid fa-star"></i>
@@ -109,7 +109,7 @@ const Review = () => {
                   <img src="/image/review_4.webp"/>
               </div>
               <div className="review_text">
-                  <h2 className="name">John Deo</h2>
+                  <h2 className="name">Reviewer 4</h2>
 
                   <div className="review_icon">
                       <i className="fa-solid fa-star"></i>

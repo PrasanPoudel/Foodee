@@ -1,9 +1,11 @@
 .title{
     font-size: 50px;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 75px;
+    margin-top: 125px;
+    margin-bottom: 75px;
 }
 
 .title span{
@@ -302,7 +304,7 @@
             gap: 75px;
         }
         .title{
-            font-size: 35px;
+            font-size: 30px;
             flex-wrap: wrap;
         }
         

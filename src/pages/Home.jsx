@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Gallary from "../components/Gallary"
+import Gallery from "../components/Gallery"
 import Review from "../components/Review";
 import TableBooking from "../components/TableBooking";
 import Team from "../components/Team";
@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <Navbar/>
       <Hero />
-      <Gallary/>
+      <Gallery/>
       <Review/>
       <TableBooking />
       <Team/>
