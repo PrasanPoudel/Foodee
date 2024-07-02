@@ -3,13 +3,17 @@ import { IoMdClose } from "react-icons/io";
 import logo from "../assets/logo.png";
 import emptyCart from "../assets/emptyCart.png";
 import { useState, useEffect } from "react";
-import { LuShoppingBag } from "react-icons/lu";
+import { LuShoppingBasket } from "react-icons/lu";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ItemCard from "./ItemCard";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
+  const location = useLocation();
+  const isActive = (location, paths, hashes) => {
+    return paths.includes(location.pathname) && hashes.includes(location.hash);
+  };
   const [isVisibleCart, setIsVisibleCart] = useState(false);
   const [isVisibleLinks,setIsVisibleLinks] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
@@ -48,23 +52,27 @@ const Navbar = () => {
         </div>
       </div>
             <div>
-          <ul className="hidden lg:flex  gap-10 text-2xl items-center flex-nowrap">
+          <ul className="hidden lg:flex  gap-10 text-2xl items-center flex-nowrap border-4 border-orange-600 p-2 rounded-lg">
             <li>
-              <Link to="/" onClick={scrollToTop} className={` font-bold hover:border-orange-600 hover:border-b-4`}>Home</Link>
+              <Link to="/" onClick={scrollToTop} className={`${isActive(location, ['/'], ['']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Home</Link>
             </li>
             <li>
-              <Link to="/Menu" onClick={scrollToTop} className="NavLink hover:border-orange-600 hover:border-b-4 font-bold">Menu</Link>
+              <Link to="/Menu" onClick={scrollToTop} className={`${isActive(location, ['/Menu'], ['']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-4 font-bold`}>Menu</Link>
             </li>
             <li>
-              <a href="#Gallary"  className="NavLink hover:border-orange-600 hover:border-b-4 font-bold">Gallary</a>
+              <a href="#Gallary" 
+              onClick={()=>
+                console.log(location.pathname)
+              }
+              className={`${isActive(location, ['/', '/Menu'], ['#Gallary']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-4 font-bold`}>Gallary</a>
             </li>
             <li>
-              <a href="#Team" className="NavLink hover:border-orange-600 hover:border-b-4 font-bold">Team</a>
+              <a href="#Team" className={`${isActive(location, ['/', '/Menu'], ['#Team']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-4 font-bold`}>Team</a>
             </li>
           </ul>
         </div>
         <div  className='flex h-[65px] w-[120px] mr-[-40px] items-center'>
-      <LuShoppingBag
+      <LuShoppingBasket
         onClick={() => setIsVisibleCart(!isVisibleCart)}
         className={`bg-transparent text-5xl`}
       />
@@ -86,16 +94,16 @@ const Navbar = () => {
           </div>
           <ul className="flex flex-col gap-10 text-2xl">
             <li> 
-              <Link to="/" onClick={scrollToTop}  className="hover:border-orange-600 hover:border-b-4 font-bold">Home</Link>
+              <Link to="/" onClick={scrollToTop}  className={`${isActive(location, ['/'], ['']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Home</Link>
             </li>
             <li>
-              <Link to="/Menu" onClick={scrollToTop} className="hover:border-orange-600 hover:border-b-4 font-bold">Menu</Link>
+              <Link to="/Menu" onClick={scrollToTop} className={`${isActive(location, ['/Menu'], ['']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Menu</Link>
             </li>
             <li>
-              <a href="#Gallary" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className="hover:border-orange-600 hover:border-b-4 font-bold">Gallary</a>
+              <a href="#Gallary" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className={`${isActive(location, ['/', '/Menu'], ['#Gallary']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Gallary</a>
             </li>
             <li>
-              <a href="#Team" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className="hover:border-orange-600 hover:border-b-4 font-bold">Team</a>
+              <a href="#Team" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className={`${isActive(location, ['/', '/Menu'], ['#Team']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-4`}>Team</a>
             </li>
           </ul>
         </div>
@@ -128,22 +136,24 @@ const Navbar = () => {
             })
         ) : (
           <div className="flex flex-col items-center justify-center w-full">
-            <img src={emptyCart} alt="" className="h-[100px] w-[150px] bg-transparent"/>
-            <p>Bag is empty.</p>
+            <img src={emptyCart} alt="" className="h-[100px] w-[150px]"/>
+            <p className="text-xl font-bold">Food basket is empty.</p>
           </div>
         )}
 
-        <div>
+        <div className="mt-10">
           <h3 className="font-semibold text-xl text-gray-800">Items : <span className="font-bold">{totalQty}</span></h3>
           <h3 className="font-semibold text-xl text-gray-800">
             Total Amount : <span className="text-green-500">रु. {totalPrice}</span>
           </h3>
-          <hr className="w-[90vw] lg:w-[18vw] my-2" />
           <button
             onClick={() => navigate("/success")}
-            className="bg-green-600 text-2xl font-bold px-3 text-white py-5 rounded-lg w-[90vw] lg:w-full mb-5"
+            className="text-center justify-center bg-green-600 text-2xl font-bold px-3 text-white py-5 rounded-lg w-full mt-5"
           >Pay
           </button>
+          <Link to='/Menu' className="flex">
+        <button onClick={() => setIsVisibleCart(!isVisibleCart)} className="flex gap-5 items-center justify-center bg-orange-600 text-2xl font-bold px-3 text-white py-5 rounded-lg w-full mt-2 mb-5">Order Food<LuShoppingBasket className='text-3xl'/> </button>
+        </Link>
         </div>
       </div>
     </nav>

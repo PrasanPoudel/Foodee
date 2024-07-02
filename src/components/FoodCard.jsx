@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/slices/CartSlice";
-import { LuShoppingBag } from "react-icons/lu";
+import { LuShoppingBasket } from "react-icons/lu";
 import {Link} from "react-router-dom"
 const FoodCard = ({ id, name, price, img, rating, handleToast }) => {
   const dispatch = useDispatch();
@@ -26,7 +26,7 @@ const FoodCard = ({ id, name, price, img, rating, handleToast }) => {
         <Link to={`/SingleFoodItem/${name}`} className="flex items-center border-2 border-black p-1 text-[15px] font-bold rounded-lg">
         Food detail »
         </Link>
-        <LuShoppingBag
+        <LuShoppingBasket
           onClick={() => {
             dispatch(
               addToCart({ id, name, price, rating, img, qty: 1 })
