@@ -114,39 +114,39 @@
     
     /*Order*/
     
-    .order{
+    .TableBooking{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
     
-    .order .order_main{
+    .TableBooking .TableBooking_main{
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
     
-    .order .order_main .order_image img{
+    .TableBooking .TableBooking_main .TableBooking_image img{
         width: 500px;
         height: 500px;
     }
     
-    .order .order_main form{
+    .TableBooking .TableBooking_main form{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0 10px;
     }
     
-    .order .order_main form .input p{
+    .TableBooking .TableBooking_main form .input p{
         font-size: 25px;
         line-height: 35px;
     }
     
-    .order .order_main form .input{
+    .TableBooking .TableBooking_main form .input{
         margin: 5px;
     }
     
-    .order .order_main form .input input{
+    .TableBooking .TableBooking_main form .input input{
         width: 300px;
         height: 35px;
         padding: 0 10px;
@@ -156,11 +156,11 @@
         border-radius: 3px;
     }
     
-    .order .order_main form .input input:focus{
+    .TableBooking .TableBooking_main form .input input:focus{
         border: 2px solid  rgb(234 88 12);
     }
     
-    .order .order_main form .order_btn{
+    .TableBooking .TableBooking_main form .TableBooking_btn{
         padding: 5px 0;
         background:  rgb(234 88 12);
         color: #fff;
@@ -178,17 +178,14 @@
     /*Team*/
     
     .team{
-        width: 100%
+        width: 100%;
     }
-    
-    
-    .team .team_box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .team_box{
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
-    
-    .team .team_box .profile{
+    .profile{
         width: 320px;
         height: 320px;
         border-radius: 50%;
@@ -201,12 +198,12 @@
         transition: 0.5s;
     }
     
-    .team .team_box .profile:hover{
+     .profile:hover{
         border-radius: 25px;
         height: 375px;
     }
     
-    .team .team_box .profile img{
+     .profile img{
         width: 250px;
         height: 250px;
         object-fit: cover;
@@ -218,29 +215,29 @@
         transition: 0.5s;
     }
     
-    .team .team_box .profile:hover img{
+     .profile:hover img{
         border-radius: 25px;
         margin-top: -230px;
     }
     
-    .team .team_box .profile .info{
+    .profile .info{
         position: absolute;
         text-align: center;
         top: 25%;
         transition: 0.5s;
     }
     
-    .team .team_box .profile:hover .info{
+   .profile:hover .info{
         top: 60%;
     }
     
-    .team .team_box .profile .info .name{
+     .profile .info .name{
         color: #000;
         margin-bottom: 15px;
         font-weight: 600;
     }
     
-    .team .team_box .profile .info .bio{
+    .profile .info .bio{
         width: 70%;
         text-align: center;
         margin: 0 auto 10px auto;
@@ -249,7 +246,7 @@
         line-height: 1rem;
     }
     
-    .team .team_box .profile .info .team_icon i{
+    .profile .info .team_icon i{
         margin: 10px 5px 5px 5px;
         padding: 10px;
         border-radius: 50%;
@@ -258,7 +255,7 @@
         transition: 0.5s;
     }
     
-    .team .team_box .profile .info .team_icon i:hover{
+    .profile .info .team_icon i:hover{
         background-color:  rgb(234 88 12);
         color: #fff;
     }
@@ -280,18 +277,14 @@
     }
     
     
-    @media  screen and (width<1200px) {
-        
-        .review .review_box{
+    @media  screen and (width<1250px) {
+        .TableBooking .TableBooking_main{
             flex-direction: column;
         }
-        .order .order_main{
-            flex-direction: column;
-        }
-        .order .order_main form{
+        .TableBooking .TableBooking_main form{
             grid-template-columns: 1fr;
         }
-        .order .order_main .order_image img{
+        .TableBooking .TableBooking_main .TableBooking_image img{
             width: 300px;
             height: 350px;
         }
@@ -299,16 +292,12 @@
             grid-template-columns: 1fr;
             gap: 75px;
         }
-        .team .team_box{
-            grid-template-columns: 1fr;
-            gap: 75px;
-        }
         .title{
             font-size: 30px;
             flex-wrap: wrap;
         }
-        
-    .about_main .image img{
-        display: none;
-    }
+        .team_box{
+            flex-direction: column;
+            gap: 75px;
+        }
     }

@@ -2,13 +2,13 @@ import React from 'react'
 
 const TableBooking = () => {
   return (
-    <div className="order" id="TableBooking">
+    <div className="TableBooking" id="TableBooking">
       <h1 className="title">Table<span>Booking</span></h1>
 
-      <div className="order_main">
+      <div className="TableBooking_main">
 
-          <div className="order_image">
-              <img src="/image/order_image.webp"/>
+          <div className="TableBooking_image">
+              <img src="/image/TableBooking_image.webp"/>
           </div>
 
           <form action="#">
@@ -32,7 +32,7 @@ const TableBooking = () => {
                   <input type="number" min="1" max="5" placeholder="" />
               </div>
 
-              <a href="#" className="order_btn rounded-lg border-2 hover:border-black">Request</a>
+              <a href="#" className="TableBooking_btn rounded-lg bTableBooking-2 hover:bTableBooking-black">Request</a>
 
           </form>
 

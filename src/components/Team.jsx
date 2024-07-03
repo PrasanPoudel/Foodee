@@ -12,7 +12,6 @@ const Team = () => {
             <div className="info">
                 <h2 className="name">Chef 1</h2>
                 <p className="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
                 <div className="team_icon">
                     <i className="fa-brands fa-facebook-f"></i>
                     <i className="fa-brands fa-twitter"></i>

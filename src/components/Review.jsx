@@ -64,7 +64,7 @@ const Review = () => {
                   </div>
 
                   <p>
-                  The food here is a culinary masterpiece. Each dish was beautifully crafted and tasted even better than it looked. The ambiance was charming and the service was top-notch. If you're a food enthusiast, this place is a must-visit. Worth every penny!
+                  The food here is a culinary masterpiece. Each dish was beautifully crafted and tasted even better than it looked. The ambiance was charming and the service was top-notch.
                   </p>
 
               </div>
@@ -96,8 +96,8 @@ const Review = () => {
                   </div>
 
                   <p>
-                    From the moment we walked in, we were treated like royalty. The ambiance was elegant yet cozy, the staff were incredibly knowledgeable and attentive, and the food was beyond delicious. Every bite was a delight, and each course was a work of art. A truly memorable evening.
-                  </p>
+                    Not just food but the service was also impeccable, with staff who went above and beyond to ensure we had a perfect dining experience. Highly recommend for any special occasion.
+                    </p>
 
               </div>
 
@@ -127,7 +127,7 @@ const Review = () => {
                   </div>
 
                   <p>
-                    This restaurant sets the standard for fine dining. The food was exquisite, prepared with fresh ingredients and bursting with flavor. The service was impeccable, with staff who went above and beyond to ensure we had a perfect dining experience. Highly recommend for any special occasion.
+                    This restaurant sets the standard for fine dining. The food was exquisite, prepared with fresh ingredients and bursting with flavor.
                   </p>
 
               </div>

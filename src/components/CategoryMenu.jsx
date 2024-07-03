@@ -23,7 +23,7 @@ const CategoryMenu = () => {
 
   return (
     <div className="ml-5 mt-6" id="CategoryMenu">
-      <h3 className="text-xl font-semibold">
+      <h3 className="text-2xl font-bold">
        Try some delicious Foods:
       </h3>
       <div>
@@ -50,7 +50,7 @@ const CategoryMenu = () => {
           );
         })}
         </div>
-      <div className="flex justify-between items-center p-1 mr-5 bg-white border-black border-2 rounded-[15px] lg:w-[420px] h-[50px]">
+      <div className="flex justify-between items-center p-1 mr-5 bg-white border-black border-4 rounded-[15px] lg:w-[420px] h-[50px]">
       <FaSearch className="h-[75%] w-[10%]"/>
         <input
           type="search"

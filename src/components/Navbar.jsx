@@ -48,7 +48,7 @@ const Navbar = () => {
     <nav className={`flex z-50 shadow items-center justify-between lg:flex-row  w-full px-2 overflow-hidden ${isFixed ? 'fixed top-0 left-0  bg-[#F0F0F0]' : ''}`}>
       <div>
         <div className={`overflow-hidden items-center`}>
-        <h1 className="flex text-5xl text-orange-600 font-bold"><MdOutlineFoodBank />Foodee</h1>
+        <h1 className="flex text-4xl lg:text-5xl text-orange-600 font-bold"><MdOutlineFoodBank />Foodee</h1>
         </div>
       </div>
             <div>
@@ -74,13 +74,13 @@ const Navbar = () => {
         <div  className='flex h-[65px] w-[120px] mr-[-75px] lg:mr-[-50px] items-center'>
       <LuShoppingBasket
         onClick={() => setIsVisibleCart(!isVisibleCart)}
-        className={`bg-transparent text-5xl`}
+        className={`bg-transparent text-4xl lg:text-5xl`}
       />
       <span className={`z-10  font-bold bg-orange-600  justify-center items-center line p-4 h-[35px] relative rounded-[50%] text-xl text-white left-[-35px] cursor-pointer top-[-10px] ${totalQty<1 ? "hidden": "flex"} `}>{totalQty}</span>
       </div>     
       {/* Hamburger menu for Mobile Links  */}
       <GiHamburgerMenu  
-      className="text-5xl lg:hidden flex"
+      className="text-4xl lg:hidden flex"
       onClick={() => setIsVisibleLinks(!isVisibleLinks)}
       />
         {/* Mobile Links */}
