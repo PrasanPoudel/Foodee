@@ -6,14 +6,14 @@ const Footer = () => {
         <p className="text-xl text-center text-gray-600 border-l-2 p-2 border-gray-500  mt-4">Copyright © 2024 Foodee Restaurant—
           <a href="https://twitter.com/knyttneve" className="text-orange-600 ml-1 text-2xl" rel="noopener noreferrer" target="_blank">@Prasan Poudel</a>
         </p>
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a className=" text-3xl">
+        <span className="inline-flex items-center sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a className=" text-3xl hover:text-white border-2 border-black hover:bg-orange-600 rounded-[50%] p-3">
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a className="ml-3 text-3xl">
+          <a className="ml-3 text-3xl  hover:text-white border-2 border-black hover:bg-orange-600 rounded-[50%] p-3">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a className="ml-3 text-3xl">
+          <a className="ml-3 text-3xl  hover:text-white border-2 border-black hover:bg-orange-600 rounded-[50%] p-3">
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </span>

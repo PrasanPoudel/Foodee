@@ -9,7 +9,7 @@
 }
 
 .title span{
-    color:  rgb(234 88 12);
+    color:#ea580c;
     margin-left: 15px;
 }
     
@@ -25,9 +25,9 @@
     }
     
     .review .review_box .review_card{
-        height: 500px;
+        height: 575px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-        border-radius: 8px;
+        border-radius: 25px;
         padding: 5px 20px;
         margin: 0 10px;
     }
@@ -45,14 +45,17 @@
     }
     
     .review .review_box .review_card .review_profile img{
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         object-position: center;
         border-radius: 50%;
         border: 5px solid #cccccc;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
-    
+    .review .review_box .review_card:hover .review_profile img{
+        border-radius: 25px;
+    }
     .review .review_box .review_card .review_text{
         text-align: center;
     }
@@ -68,7 +71,7 @@
     }
     
     .review .review_box .review_card .review_text .review_icon{
-        color:  rgb(234 88 12);
+        color:#ea580c;
         transition: 0.3s;
     }
     
@@ -77,11 +80,11 @@
     }
     
     .review .review_box .review_card .review_text .review_social i{
+        font-size: 20px;
         margin: 5px 5px;
-        padding: 10px;
+        padding: 15px;
         border-radius: 50%;
-        border: 1px solid #000;
-        font-size: 15px;
+        border: 2px solid #000;
         opacity: 0;
         cursor: pointer;
         transition: 0.3s;
@@ -157,12 +160,12 @@
     }
     
     .TableBooking .TableBooking_main form .input input:focus{
-        border: 2px solid  rgb(234 88 12);
+        border: 2px solid#ea580c;
     }
     
     .TableBooking .TableBooking_main form .TableBooking_btn{
         padding: 5px 0;
-        background:  rgb(234 88 12);
+        background:#ea580c;
         color: #fff;
         width: 50%;
         text-align: center;
@@ -200,7 +203,7 @@
     
      .profile:hover{
         border-radius: 25px;
-        height: 375px;
+        height: 400px;
     }
     
      .profile img{
@@ -248,15 +251,15 @@
     
     .profile .info .team_icon i{
         margin: 10px 5px 5px 5px;
-        padding: 10px;
+        padding: 15px;
         border-radius: 50%;
-        border: 1px solid #000;
+        border: 2px solid #000;
         cursor: pointer;
         transition: 0.5s;
     }
     
     .profile .info .team_icon i:hover{
-        background-color:  rgb(234 88 12);
+        background-color:#ea580c;
         color: #fff;
     }
     
@@ -272,7 +275,7 @@
     }
     
     ::-webkit-scrollbar-thumb{
-        background:  rgb(234 88 12);
+        background:#ea580c;
         border-radius: 15px;
     }
     
