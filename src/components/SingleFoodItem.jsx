@@ -6,14 +6,14 @@ import Footer from "./Footer.jsx"
 import { Link } from 'react-router-dom';
 import { AiFillStar } from "react-icons/ai";
 import { IoMdArrowRoundBack } from "react-icons/io";
-const SingleFoodItem = ({ id, name, price, rating, img , handleToast}) => {
+const SingleFoodItem = () => {
   const Food = useParams();
   const SingleFoodData= FoodData.filter(x=>x.name == Food.name);
   const FoodItem = SingleFoodData[0];
   return (
     <>
 <Navbar />
-    <section className="pt-10 lg:mx-[200px] h-[275vh] lg:h-[120vh] text-black">
+    <section className="pt-10 lg:mx-[200px] h-[300vh] lg:h-[135vh] text-black">
       <div className="flex flex-col  bg-white p-2 m-auto">
       <div className='mb-5'>
         <Link to="/Menu" className='text-5xl'><IoMdArrowRoundBack className='border-b-2 border-r-2 border-gray-600'/></Link>

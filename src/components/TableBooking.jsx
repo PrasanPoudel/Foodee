@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { CiMail } from "react-icons/ci";
 const TableBooking = () => {
   return (
     <div className="TableBooking" id="TableBooking">
@@ -32,7 +32,7 @@ const TableBooking = () => {
                   <input type="number" min="1" max="5" placeholder="" />
               </div>
 
-              <a href="#" className="TableBooking_btn rounded-lg bTableBooking-2 hover:bTableBooking-black">Request</a>
+              <a href="#" className="TableBooking_btn rounded-lg">Request <CiMail /></a>
 
           </form>
 

@@ -1,3 +1,4 @@
+
 .title{
     font-size: 50px;
     font-weight: 700;
@@ -106,7 +107,7 @@
         font-size: 1rem;
         line-height: 1.5rem;
         text-align: justify;
-        color: #4b5563;
+        color: #000;
     }
     
     .review .review_box .review_card:hover .review_text p{
@@ -165,14 +166,17 @@
     
     .TableBooking .TableBooking_main form .TableBooking_btn{
         padding: 5px 0;
-        background:#ea580c;
+        display: flex;
+       gap: 25px;
+        align-items: center;
+        background:#000;
         color: #fff;
-        width: 50%;
-        text-align: center;
-        margin-top: 20px;
+        width: 60%;
+        margin-top: 25px;
         text-decoration: none;
         font-weight: 600;
         font-size: 25px;
+        padding: 10px;
     }
     
     
@@ -244,7 +248,7 @@
         width: 70%;
         text-align: center;
         margin: 0 auto 10px auto;
-        color: #4b5563;
+        color: #000;
         font-size: 1rem;
         line-height: 1rem;
     }

@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <footer className="mt-5">
       <div className="container px-5 py-5 flex items-center sm:flex-row flex-col">
-        <p className="text-xl text-center text-gray-600 border-l-2 p-2 border-gray-500  mt-4">Copyright © 2024 Foodee Restaurant—
+        <p className="text-xl text-center text-black border-l-2 p-2 border-gray-500  mt-4">Copyright © 2024 Foodee Restaurant—
           <a href="https://twitter.com/knyttneve" className="text-orange-600 ml-1 text-2xl" rel="noopener noreferrer" target="_blank">@Prasan Poudel</a>
         </p>
         <span className="inline-flex items-center sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

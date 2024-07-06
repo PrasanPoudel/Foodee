@@ -2,11 +2,10 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/slices/CartSlice";
-import { LuShoppingBasket } from "react-icons/lu";
 import {Link} from "react-router-dom"
+import { GiShoppingCart } from "react-icons/gi";
 const FoodCard = ({ id, name, price, img, rating, handleToast }) => {
   const dispatch = useDispatch();
-
   return (
     <div className="font-bold w-[250px] bg-white p-5 flex flex-col rounded-3xl gap-2">
       <img
@@ -25,14 +24,14 @@ const FoodCard = ({ id, name, price, img, rating, handleToast }) => {
         <Link to={`/SingleFoodItem/${name}`} className="flex items-center border-2 border-black p-1 text-[15px] font-bold rounded-lg">
         Food detail »
         </Link>
-        <LuShoppingBasket
+        <GiShoppingCart
           onClick={() => {
             dispatch(
               addToCart({ id, name, price, rating, img, qty: 1 })
             );
             handleToast(name);
           }}
-          className="p-1 text-black rounded-md text-4xl"
+          className="p-1 text-black rounded-md text-4xl scale-x-[-1]"
         />
       </div>
     </div>

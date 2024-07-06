@@ -50,7 +50,7 @@ const CategoryMenu = () => {
           );
         })}
         </div>
-      <div className="flex justify-between items-center p-1 mr-5 bg-white border-black border-4 rounded-[15px] lg:w-[420px] h-[50px]">
+      <div className="flex justify-between items-center p-1 mr-5 bg-white border-black border-2 rounded-[15px] lg:w-[420px] h-[50px]">
       <FaSearch className="h-[75%] w-[10%]"/>
         <input
           type="search"
