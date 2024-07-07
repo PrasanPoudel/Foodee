@@ -10,7 +10,7 @@ const Hero = () => {
     </div>
     <div className="lg:flex-grow md:w-1/2 lg:pl-16 md:pl-12 flex flex-col md:items-start md:text-left items-center">
       <div className=" flex flex-col lg:flex-row items-center justify-center  text-[50px] mb-5 text-black">
-        <p className='font-bold text-center'>THE KEY TO FINE DINING</p>
+        <p className='font-bold text-center text-orange-600'>THE KEY TO FINE DINING</p>
       </div>
       <p className="mb-10 text-xl text-justify"> Dive into a world of culinary delight crafted with passion and precision. Whether you're joining us for brunch, a romantic dinner, or a quick bite, our vibrant dishes and warm ambiance ensure a memorable dining experience every time.</p>
       <div>
