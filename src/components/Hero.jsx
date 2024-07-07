@@ -12,7 +12,9 @@ const Hero = () => {
       <div className=" flex flex-col lg:flex-row items-center justify-center  text-[50px] mb-5 text-black">
         <p className='font-bold text-center text-orange-600'>THE KEY TO FINE DINING</p>
       </div>
-      <p className="mb-10 text-xl text-justify"> Dive into a world of culinary delight crafted with passion and precision. Whether you're joining us for brunch, a romantic dinner, or a quick bite, our vibrant dishes and warm ambiance ensure a memorable dining experience every time.</p>
+      <p className="mb-10 text-xl text-justify"> Dive into a world of culinary delight crafted with passion and precision. Whether you're joining us for brunch, a romantic dinner, or a quick bite, our vibrant dishes and warm ambiance ensure a memorable dining experience every time. <br />
+        <span className='text-orange-600 font-bold text-3xl'>*</span> Home delivery is also available here. You can enjoy the delicious food prepared by our wonderful team in your own place.
+      </p>
       <div>
         <Link to='/Menu'>
         <button className="flex justify-between text-2xl p-3  text-white font-bold bg-black rounded-lg w-[250px] border-2 hover:border-orange-600">

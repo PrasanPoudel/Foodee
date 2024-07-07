@@ -139,12 +139,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0 10px;
+        justify-items: center;
     }
     
-    .TableBooking .TableBooking_main form .input p{
-        font-size: 25px;
-        line-height: 35px;
-    }
     
     .TableBooking .TableBooking_main form .input{
         margin: 5px;
@@ -153,17 +150,20 @@
     .TableBooking .TableBooking_main form .input input{
         width: 300px;
         height: 35px;
-        padding: 0 10px;
+        padding:25px 5px;
         border: 2px solid #cccccc;
         background: #eeeeee;
         outline: none;
         border-radius: 3px;
+        font-size: 30px;
     }
     
     .TableBooking .TableBooking_main form .input input:focus{
         border: 2px solid#ea580c;
     }
-    
+    .TableBooking .TableBooking_main form .input input::placeholder{
+        font-size: 30px;
+    }
     .TableBooking .TableBooking_main form .TableBooking_btn{
         padding: 5px 0;
         display: flex;

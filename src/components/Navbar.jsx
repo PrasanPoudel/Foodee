@@ -1,6 +1,5 @@
 import React from "react";
 import { IoMdClose } from "react-icons/io";
-import emptyCart from "../assets/emptyCart.png";
 import { useState, useEffect } from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { useSelector } from "react-redux";
@@ -8,6 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import ItemCard from "./ItemCard";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { SiIfood } from "react-icons/si";
 const Navbar = () => {
   const location = useLocation();
   const isActive = (location, paths, hashes) => {
@@ -47,7 +47,7 @@ const Navbar = () => {
     <nav className={`flex z-50 shadow items-center justify-between lg:flex-row  w-full px-2 overflow-hidden ${isFixed ? 'fixed top-0 left-0  bg-[#F0F0F0]' : ''}`}>
       <div>
         <div className={`overflow-hidden items-center`}>
-        <h1 className="flex text-4xl lg:text-5xl text-orange-600 font-bold">Foodee</h1>
+        <h1 className="flex text-4xl lg:text-5xl text-orange-600 font-bold"><SiIfood />Foodee</h1>
         </div>
       </div>
             <div>

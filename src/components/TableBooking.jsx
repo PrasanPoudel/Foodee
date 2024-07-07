@@ -13,23 +13,19 @@ const TableBooking = () => {
 
           <form action="#">
               <div className="input">
-                  <p>Name:</p>
-                  <input type="text" placeholder="" />
+                  <input type="text" placeholder="Name:" />
               </div>
 
               <div className="input">
-                  <p>Email:</p>
-                  <input type="email" placeholder="" />
+                  <input type="email" placeholder="Email:" />
               </div>
 
               <div className="input">
-                  <p>Phone Number:</p>
-                  <input placeholder="" />
+                  <input placeholder="Phone Number:" />
               </div>
 
               <div className="input">
-                  <p>Number of table:</p>
-                  <input type="number" min="1" max="5" placeholder="" />
+                  <input type="number" min="1" max="5" placeholder="Number of table:" />
               </div>
 
               <a href="#" className="TableBooking_btn rounded-lg">Request <CiMail /></a>
