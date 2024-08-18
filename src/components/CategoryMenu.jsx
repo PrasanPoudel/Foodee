@@ -50,7 +50,7 @@ const CategoryMenu = () => {
           );
         })}
         </div>
-      <div className="flex justify-between items-center p-1 mr-5 bg-white border-black border-2 rounded-[15px] lg:w-[420px] h-[50px]">
+      <div className="flex justify-between items-center p-1 mr-5 bg-white border-black border-2 rounded-[5px] lg:w-[420px] h-[50px]">
       <FaSearch className="h-[75%] w-[10%]"/>
         <input
           type="search"
@@ -59,7 +59,7 @@ const CategoryMenu = () => {
           placeholder="Search Food:"
           autoComplete="off"
           onChange={(e) => dispatch(setSearch(e.target.value))}
-          className="flex items-center bg-transparent text-xl border-none outline-none h-full w-[87%] text-black placeholder:text-gray-600 placeholder:font-medium"
+          className="flex items-center bg-transparent text-xl border-none outline-none h-full w-[87%] text-black placeholder:text-gray-600 placeholder:font-semibold"
         />
         </div>
       </div>

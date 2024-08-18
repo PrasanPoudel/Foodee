@@ -151,7 +151,7 @@ const Navbar = () => {
           >Pay
           </button>
           <Link to='/Menu' className="flex">
-        <button onClick={() => setIsVisibleCart(!isVisibleCart)} className="flex gap-5 items-center justify-center bg-black text-2xl font-bold px-3 text-white py-5 rounded-lg w-full mt-2 mb-5">Explore Menu<GiShoppingCart className='text-3xl  scale-x-[-1]'/> </button>
+        <button onClick={() => setIsVisibleCart(!isVisibleCart)} className="flex gap-5 items-center justify-center bg-orange-600 text-2xl font-bold px-3 text-white py-5 rounded-lg w-full mt-2 mb-5">Explore Menu<GiShoppingCart className='text-3xl  scale-x-[-1]'/>»</button>
         </Link>
         </div>
       </div>

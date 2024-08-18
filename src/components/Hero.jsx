@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="text-black">
   <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img className="object-cover object-center rounded-3xl" alt="hero" src="/image/welcome.jpeg" />
+      <img className="object-cover object-center rounded-3xl border-8 p-2 border-orange-600" alt="hero" src="/image/welcome.jpeg" />
     </div>
     <div className="lg:flex-grow md:w-1/2 lg:pl-16 md:pl-12 flex flex-col md:items-start md:text-left items-center">
       <div className=" flex flex-col lg:flex-row items-center justify-center  text-[50px] mb-5 text-black">
@@ -17,7 +17,7 @@ const Hero = () => {
       </p>
       <div>
         <Link to='/Menu'>
-        <button className="flex justify-between text-2xl p-3  text-white font-bold bg-black rounded-lg w-[250px] border-2 hover:border-orange-600">
+        <button className="flex justify-between text-2xl p-3  text-white font-bold bg-orange-600 rounded-lg w-[250px] border-2 hover:scale-x-105">
           Explore Menu  &nbsp;<GiShoppingCart className='text-3xl scale-x-[-1]'/>» </button>
         </Link>
       </div>
