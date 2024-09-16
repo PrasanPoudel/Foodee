@@ -1,7 +1,6 @@
 import React from 'react'
 import CategoryMenu from '../components/CategoryMenu'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import FoodItems from '../components/FoodItems'
 
 const Menu = () => {
@@ -10,7 +9,6 @@ const Menu = () => {
     <Navbar />
     <CategoryMenu />
     <FoodItems />
-    <Footer/>
     </>
   )
 }

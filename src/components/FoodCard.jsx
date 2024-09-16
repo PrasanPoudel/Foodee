@@ -21,7 +21,7 @@ const FoodCard = ({ id, name, price, img, rating, handleToast }) => {
         <span className="flex justify-center items-center">
           <AiFillStar className="mr-1 text-orange-400" /> {rating}
         </span>
-        <Link to={`/SingleFoodItem/${name}`} className="flex items-center border-2 border-black p-1 text-[15px] font-bold rounded-lg">
+        <Link to={`/SingleFoodItem/${name}`} className="flex items-center  p-1 text-[15px] font-bold">
         Food detail »
         </Link>
         <GiShoppingCart

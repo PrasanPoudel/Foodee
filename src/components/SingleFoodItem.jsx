@@ -2,7 +2,6 @@ import React from 'react'
 import FoodData from "../data/FoodData.js";
 import { useParams } from 'react-router'
 import Navbar from "./Navbar"
-import Footer from "./Footer.jsx"
 import { Link } from 'react-router-dom';
 import { AiFillStar } from "react-icons/ai";
 import { IoMdArrowRoundBack } from "react-icons/io";
@@ -36,7 +35,6 @@ const SingleFoodItem = () => {
         </div>
       </div>
     </section>
-    <Footer />
   </>
   )
 }
