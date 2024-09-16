@@ -3,9 +3,6 @@ import CategoryMenu from '../components/CategoryMenu'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FoodItems from '../components/FoodItems'
-import TableBooking from '../components/TableBooking'
-import Team from '../components/Team'
-import Gallery from '../components/Gallery'
 
 const Menu = () => {
   return (
@@ -13,9 +10,6 @@ const Menu = () => {
     <Navbar />
     <CategoryMenu />
     <FoodItems />
-    <Gallery />
-    <TableBooking />
-    <Team />
     <Footer/>
     </>
   )

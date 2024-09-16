@@ -58,16 +58,6 @@ const Navbar = () => {
             <li className="border-l-2 border-black pl-2">
               <Link to="/Menu" onClick={scrollToTop} className={`${isActive(location, ['/Menu'], ['']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-2 font-bold`}>Menu</Link>
             </li>
-            <li className="border-l-2 border-black pl-2">
-              <a href="#Gallery" 
-              onClick={()=>
-                console.log(location.pathname)
-              }
-              className={`${isActive(location, ['/', '/Menu'], ['#Gallery']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-2 font-bold`}>Gallery</a>
-            </li>
-            <li className="border-l-2 border-black pl-2">
-              <a href="#Team" className={`${isActive(location, ['/', '/Menu'], ['#Team']) ? 'text-orange-600' : ''} hover:border-orange-600 hover:border-b-2 font-bold`}>Team</a>
-            </li>
           </ul>
         </div>
         <div  className='flex h-[65px] w-[120px] mr-[-75px] lg:mr-[-50px] items-center'>
@@ -97,12 +87,6 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/Menu" onClick={scrollToTop} className={`${isActive(location, ['/Menu'], ['']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-2`}>Menu</Link>
-            </li>
-            <li>
-              <a href="#Gallery" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className={`${isActive(location, ['/', '/Menu'], ['#Gallery']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-2`}>Gallery</a>
-            </li>
-            <li>
-              <a href="#Team" onClick={() => setIsVisibleLinks(!isVisibleLinks)} className={`${isActive(location, ['/', '/Menu'], ['#Team']) ? 'text-orange-600' : ''} font-bold hover:border-orange-600 hover:border-b-2`}>Team</a>
             </li>
           </ul>
         </div>
