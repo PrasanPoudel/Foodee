@@ -17,3 +17,112 @@ body {
 html{
   scroll-behavior: smooth;
 }
+.cart-button {
+  display: flex;
+  position: relative;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.cart-button:active {
+  transform: scale(0.9);
+}
+
+/* Icon Styles */
+.cart-button .PiShoppingBagOpenBold {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+}
+
+.cart-button .fa-box {
+  position: absolute;
+  z-index: 3;
+  top: -20%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+/* Text Styles */
+.cart-button span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+}
+
+.cart-button span.add-to-cart {
+  opacity: 1;
+}
+
+
+/* Animation Classes */
+.cart-button.clicked .PiShoppingBagOpenBold {
+  animation: cart 1.5s ease-in-out forwards;
+}
+
+.cart-button.clicked .fa-box {
+  animation: box 1.5s ease-in-out forwards;
+}
+
+.cart-button.clicked span.add-to-cart {
+  animation: txt1 1.5s ease-in-out forwards;
+}
+
+
+/* Keyframes */
+@keyframes cart {
+  0% {
+    left: -10%;
+  }
+  40%,
+  60% {
+    left: 50%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes box {
+  0%,
+  40% {
+    top: -20%;
+  }
+  60% {
+    top: 40%;
+    left: 52%;
+  }
+  100% {
+    top: 40%;
+    left: 112%;
+  }
+}
+
+@keyframes txt1 {
+  0% {
+    opacity: 1;
+  }
+  20%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes txt2 {
+  0%,
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

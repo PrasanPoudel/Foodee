@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import { GiShoppingCart } from "react-icons/gi";
+import { PiShoppingBagOpenBold } from "react-icons/pi";
+
 const Hero = () => {
   return (
     <section className="text-black">
@@ -17,8 +18,8 @@ const Hero = () => {
       </p>
       <div>
         <Link to='/Menu'>
-        <button className="flex justify-between text-2xl p-3  text-white font-bold bg-orange-600 rounded-lg w-[250px] border-2 hover:scale-x-105">
-          Explore Menu  &nbsp;<GiShoppingCart className='text-3xl scale-x-[-1]'/>» </button>
+        <button className="flex justify-between text-2xl p-3  text-white font-bold bg-orange-600 rounded-lg w-[250px] hover:scale-x-105">
+          Explore Menu  &nbsp;<PiShoppingBagOpenBold className='text-3xl'/>» </button>
         </Link>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FoodData from "../data/FoodData";
 import { useDispatch, useSelector } from "react-redux";
 import { setCategory } from "../redux/slices/CategorySlice";
-import { IoSearch } from "react-icons/io5";
+import { BsSearch } from "react-icons/bs";
 import { setSearch } from "../redux/slices/SearchSlice";
 const CategoryMenu = () => {
   const [categories, setCategories] = useState([]);
@@ -38,7 +38,7 @@ const CategoryMenu = () => {
             <button
               onClick={() => dispatch(setCategory(category))}
               key={index}
-              className={`px-3 py-2 bg-gray-200 font-bold rounded-lg hover:bg-orange-600 hover:text-white ${
+              className={`px-3 py-2 bg-gray-200 font-semibold rounded-lg hover:bg-orange-600 hover:text-white ${
                 selectedCategory === category && "bg-orange-600 text-white"
               } `}
             >
@@ -48,7 +48,7 @@ const CategoryMenu = () => {
         })}
         </div>
       <div className="flex justify-between items-center p-1 mr-5 bg-white rounded-[10px] lg:w-[420px] h-[50px]">
-      <IoSearch className="h-[75%] w-[10%]"/>
+        <BsSearch className="h-[75%] w-[10%]"/>
         <input
           type="search"
           name="search"
@@ -56,7 +56,7 @@ const CategoryMenu = () => {
           placeholder="Search Food:"
           autoComplete="off"
           onChange={(e) => dispatch(setSearch(e.target.value))}
-          className="flex items-center bg-transparent text-xl border-none outline-none h-full w-[87%] text-black placeholder:text-gray-600 placeholder:font-semibold"
+          className="flex items-center bg-transparent text-xl border-none outline-none h-full w-[87%] text-black placeholder:text-gray-500 placeholder:font-[500]"
         />
         </div>
       </div>

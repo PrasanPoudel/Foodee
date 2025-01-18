@@ -23,7 +23,7 @@ const ItemCard = ({ id, name, qty, price, img }) => {
         <MdDelete
         onClick={() => {
           dispatch(removeFromCart({ id, img, name, price, qty }));
-          toast(`Food item '${name}' is removed from cart 🛒.`, {
+          toast(`Food item '${name}' is removed from bag ˚ ༘⋆🛍️｡˚.`, {
             icon: "🗑️",
             duration: 500,
           }); 
