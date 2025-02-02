@@ -11,11 +11,13 @@ import toast, { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 import { FaBox } from "react-icons/fa";
 import { PiShoppingBagOpenBold } from "react-icons/pi";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 const SingleFoodItem = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
   }, []);
   const [clicked, setClicked] = useState(false);
+  const [qty, setQty] = useState(1);
 
   const handleButtonClick = () => {
     if (clicked) return; // Prevent re-triggering the animation while it's active
@@ -38,7 +40,7 @@ const SingleFoodItem = () => {
         price: FoodItem.price,
         rating: FoodItem.rating,
         img: FoodItem.img,
-        qty: 1,
+        qty: qty,
       })
     );
     handleToast(FoodItem.name);
@@ -70,19 +72,42 @@ const SingleFoodItem = () => {
                 <AiFillStar className="text-orange-400" />
                 {FoodItem.rating}
               </p>
+              <div className="flex flex-col mt-5">
+              <div className="flex items-center gap-5">
+                <AiOutlineMinus
+                  onClick={() => {
+                    if (qty > 1) {
+                      setQty(qty - 1);
+                    } else {
+                      setQty(1);
+                    }
+                  }}
+                  className="border-2 border-gray-600 text-gray-600 hover:text-white hover:bg-red-500 hover:border-none rounded-md p-1 text-4xl transition-all ease-linear cursor-pointer"
+                />
+                <span className="text-2xl">{qty}</span>
+                <AiOutlinePlus
+                  onClick={() => {
+                    setQty(qty + 1);
+                  }}
+                  className="border-2 border-gray-600 text-gray-600 hover:text-white hover:bg-green-500 hover:border-none rounded-md p-1 text-4xl transition-all ease-linear cursor-pointer"
+                />
+              </div>
               <button
-                className={`cart-button w-[250px]  p-3 h-[60px] text-2xl text-white font-bold bg-orange-600 hover:bg-gray-500 hover:scale-x-105 mt-10 mb-5  ${clicked ? "clicked" : ""}`}
-                onClick={()=>{
+                className={`cart-button w-[135px]  p-2 h-[50px] text-xl text-white bg-orange-600 hover:bg-gray-500 hover:scale-x-105 my-5  ${
+                  clicked ? "clicked" : ""
+                }`}
+                onClick={() => {
                   handleButtonClick();
                   handleAddToCart();
                 }}
               >
                 <span className="add-to-cart flex gap-2 w-full justify-center items-center">
-                  Add To Bag: <PiShoppingBagOpenBold className="text-4xl" />
+                <PiShoppingBagOpenBold className="text-4xl" />
                 </span>
                 <PiShoppingBagOpenBold className="PiShoppingBagOpenBold text-4xl" />
                 <FaBox className="fa-box" />
               </button>
+              </div>
               <p className="mt-1 text-2xl lg:px-5">
                 Price:{" "}
                 <span className="text-2xl text-green-600">

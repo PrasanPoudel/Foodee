@@ -37,7 +37,7 @@ html{
   position: absolute;
   z-index: 2;
   top: 50%;
-  left: -10%;
+  left: -20%;
   transform: translate(-50%, -50%);
 }
 
@@ -45,14 +45,14 @@ html{
   position: absolute;
   z-index: 3;
   top: -20%;
-  left: 52%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
 /* Text Styles */
 .cart-button span {
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -81,29 +81,29 @@ html{
 /* Keyframes */
 @keyframes cart {
   0% {
-    left: -10%;
+  left: -50%;
   }
   40%,
   60% {
     left: 50%;
   }
   100% {
-    left: 110%;
+    left: 150%;
   }
 }
 
 @keyframes box {
   0%,
   40% {
-    top: -20%;
+    top: -50%;
   }
   60% {
-    top: 40%;
-    left: 52%;
+    top: 50%;
+    left: 50%;
   }
   100% {
-    top: 40%;
-    left: 112%;
+    top: 50%;
+    left: 120%;
   }
 }
 
